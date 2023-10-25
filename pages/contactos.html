@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/burger-menu.css" />
+		<link rel="stylesheet" href="../styles/footer.css" />
+		<meta name="viewport" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="icon" type="image/x-icon" href="../images/veterinarian.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div id="burger-menu">
+			<span></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../pages/veterinarias.html">Veterinarias</a></li>
+				<li>
+					<a href="../pages/acerca-de-nosotros.html">Acerca de Nosotros </a>
+				</li>
+				<li><a href="../pages/contactos.html">Contactanos</a></li>
+			</ul>
+		</div>
+
+		<!-- aqui hago el formulario para contacto -->
+		<form class="formularioContacto">
+			<div class="mb-3">
+				<label for="primerNombre" class="form-label"> Primer Nombre</label>
+				<input
+					type="nombre"
+					class="form-control"
+					id="primerNombre"
+					placeholder="Ingresa tu nombre"
+					aria-describedby="emailHelp"
+				/>
+				<label for="exampleInputEmail1" class="form-label"> Apellido</label>
+				<input
+					type="apellido"
+					class="form-control"
+					id="apellido"
+					placeholder="Ingresa tu apellido"
+					aria-describedby="emailHelp"
+				/>
+				<label for="ejemploEmail1" class="form-label">Email address</label>
+				<input
+					type="email"
+					class="form-control"
+					id="ejemploEmail1"
+					placeholder="Ingresa tu email"
+					aria-describedby="emailHelp"
+				/>
+				<div id="emailHelp" class="form-text">
+					No compartiremos tus datos con nadie.
+				</div>
+				<label for="mensajePersonal" class="form-label"
+					>Ingresa tu mensaje
+				</label>
+				<textarea
+					class="form-control"
+					id="mensajePeresonal"
+					cols="30"
+					rows="10"
+					placeholder="En que te podemos ayudar?"
+				></textarea>
+
+				<!-- aqui tenemos el bototn de enviar, al hacer click se activara la funcion de JS, la cual dara un mensaje.-->
+
+				<div class="d-grid gap-2">
+					<button type="submit" class="btn btn-primary" onclick="enviarForm()">
+						Enviar
+					</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- aqui esta los sources para bootstrap -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+
+	<!-- aqui esta link de JavaScript -->
+	<script src="../index.js"></script>
+</html>
