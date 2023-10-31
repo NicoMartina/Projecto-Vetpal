@@ -39,20 +39,26 @@
 		</div>
 
 		<!-- SEARCH BAR -->
-		<div class="searchbar-body">
-				
-				<div class="box-del-index">
-					<input type="text" placeholder="search..." />
-					<a href="#">
-						<i class="fas fa-solid fa-search"></i>
-					</a>
-				</div>
-				<script
-					src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-					integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-					crossorigin="anonymous"
-				></script>
+
+		<div class="searchbar-body">	
+			<div class="box-del-index">
+				<input type="text" placeholder="search..." data-search>
+				<a href="#">
+					<i class="fas fa-solid fa-search"></i>
+				</a>
+			</div>	
+		</div>
+	
+		<!-- VETERINARIAS CARDS -->
+		<div class="user-cards user-container" data-user-cards-container></div>
+
+		<template data-user-template>
+			<div class="card">
+				<div class="header" data-header></div>
+				<div class="body" data-body></div>
 			</div>
+		</template>
+		
 
 
 		<!-- FOOTER -->
@@ -93,4 +99,9 @@
 		></script>
 	</body>
 	<script src="../index.js"></script>
+	<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+				crossorigin="anonymous"
+			></script>
 </html>
